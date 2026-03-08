@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background-color: #030712;
+    color: #f9fafb;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .card { background-color: #111827; border: 1px solid #1f2937; border-radius: 0.75rem; padding: 1.5rem; }
+  .btn-primary { background-color: #2563eb; color: white; font-weight: 500; padding: 0.5rem 1rem; border-radius: 0.5rem; transition: background-color 0.15s; border: none; cursor: pointer; }
+  .btn-primary:hover { background-color: #1d4ed8; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-secondary { background-color: #1f2937; color: #e5e7eb; font-weight: 500; padding: 0.5rem 1rem; border-radius: 0.5rem; transition: background-color 0.15s; border: none; cursor: pointer; }
+  .btn-secondary:hover { background-color: #374151; }
+  .metric-card { background-color: #111827; border: 1px solid #1f2937; border-radius: 0.75rem; padding: 1.25rem; }
+  .input { background-color: #1f2937; border: 1px solid #374151; border-radius: 0.5rem; padding: 0.5rem 0.75rem; font-size: 0.875rem; color: #f9fafb; width: 100%; outline: none; }
+  .input:focus { border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59,130,246,0.3); }
+  .select { background-color: #1f2937; border: 1px solid #374151; border-radius: 0.5rem; padding: 0.5rem 0.75rem; font-size: 0.875rem; color: #f9fafb; cursor: pointer; outline: none; }
+  .select:focus { border-color: #3b82f6; }
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0a0f1a; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line { stroke: #1f2937; }
+
+.recharts-text { fill: #9ca3af; }
